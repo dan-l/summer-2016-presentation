@@ -6,174 +6,134 @@
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="node_modules/shower-ribbon/styles/screen-16x10.css">
+	<style type="text/css">
+		.slide { color: white; background: black;}
+		.emphasis-text { font-weight: 700; color: red; }
+		.shorten-text { width: 30px; }
+	</style>
 </head>
-<body class="shower list">
+<body class="shower full">
 	<header class="caption">
-		<h1>Shower Presentation Engine</h1>
-		<p>Yours Truly, Famous Inc.</p>
+		<h1>Daniel Lim</h1>
+		<p>Summer 2016 Intern Presentation</p>
 	</header>
 	<section class="slide" id="cover">
-		<h2>Shower Presentation Engine</h2>
-		<p>Brought to you by <a href="http://pepelsbey.net">Vadim Makeev</a></p>
-		<img src="pictures/cover.jpg" alt="" class="cover">
-		<!--
-			To apply styles to the certain slides
-			set slide ID to get needed elements
-			-->
-		<style>
-			#cover h2 {
-				margin:30px 0 0;
-				color:#FFF;
-				text-align:center;
-				font-size:70px;
-				}
-			#cover p {
-				margin:10px 0 0;
-				text-align:center;
-				color:#FFF;
-				font-style:italic;
-				font-size:20px;
-				}
-				#cover p a {
-					color:#FFF;
-					}
-		</style>
+		<h2>Daniel Lim</h2>
+		<p>FAS(T) summer</p>
+		<p>Summer 2016 Intern Presentation</p>
 	</section>
 	<section class="slide">
-		<h2>Shower key features</h2>
-		<ol>
-			<li>Built on HTML, CSS and vanilla JavaScript</li>
-			<li>Works in all modern browsers</li>
-			<li>Themes are separated from engine</li>
-			<li>Modular and extensible</li>
-			<li>Fully keyboard accessible</li>
-			<li>Printable to PDF</li>
-		</ol>
-		<p class="note">Shower ['ʃəuə] noun. A person or thing that shows.</p>
+		<h2>Background</h2>
+		<ul>
+			<li><i>Which team?</i><br>Originally Firefox for Android intern, now part of Activity Stream Mobile Guild</li>
+			<li><i>Where do you based?</i><br>YVR Vancouver Office</li>
+			<li><i>Which school, what major?</i><br>Computer Science Undergraduate at University of British Columbia, Vancouver, Canada</li>
+		</ul>
 	</section>
 	<section class="slide">
-		<h2>Plain text on your slides</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur <a href="#4">adipisicing</a> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <em>quis nostrud</em> exercitation ullamco laboris <strong>nisi ut aliquip</strong> ex ea commodo consequat. Duis aute irure <i>dolor</i> in reprehenderit in voluptate velit esse cillum <b>dolore</b> eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in <code>&lt;culpa&gt;</code> qui officia deserunt mollit anim id est laborum.</p>
+		<h2>Work</h2>
+		<ul>
+			<li><span class="emphasis-text">F</span>ennec <sup>[1]</sup> UI bug tickets</li>
+			<li><span class="emphasis-text">A</span>ctivity Stream Web Extension Prototype Hack</li>
+			<li><span class="emphasis-text">S</span>ync work on Android (WIP)</li>
+		</ul>
+		<p class="note">Fennec <sup>[1]</sup>. Project name for Firefox for Android</p>
 	</section>
 	<section class="slide">
-		<h2>Two columns if you like</h2>
-		<p class="double">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
+		<h2 class="shorten-text">Fennec UI bug tickets</h2>
+		<img src="pictures/fennechome.png" class="cover">
 	</section>
 	<section class="slide">
-		<h2>All kind of lists</h2>
-		<ol>
-			<li>Simple lists are marked with bullets</li>
-			<li>Ordered lists begin with a number</li>
-			<li>You can even nest lists one inside another
-				<ul>
-					<li>Or mix their types</li>
-					<li>But do not go too far</li>
-					<li>Otherwise audience will be bored</li>
-				</ul>
-			</li>
-			<li>Look, seven rows exactly!</li>
-		</ol>
+		<h2>What</h2>
+		<img src="pictures/bug.png" height="480" width="780">
 	</section>
 	<section class="slide">
-		<h2>Serious citations</h2>
-		<figure>
-			<blockquote>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
-			</blockquote>
-			<figcaption>Marcus Tullius Cicero</figcaption>
-		</figure>
+		<h2>Why</h2>
+		<ul>
+			<li>It's a bug</li>
+			<li>Inconsistencies between tablet and phone</li>
+			<li>Add new capabilities</li>
+		</ul>
 	</section>
 	<section class="slide">
-		<h2>Code samples</h2>
-		<pre>
-			<code>&lt;!DOCTYPE html&gt;</code>
-			<code class="mark">&lt;html lang="en"&gt;</code>
-			<code><mark>&lt;head&gt;</mark> <span class="comment">&lt;!--Comment--&gt;</span></code>
-			<code>    &lt;title&gt;Shower&lt;/title&gt;</code>
-			<code>    &lt;meta charset="<mark class="important">UTF-8</mark>"&gt;</code>
-			<code>    &lt;link rel="stylesheet" href="screen.css"&gt;</code>
-			<code><mark>&lt;/head&gt;</mark></code>
-		</pre>
+		<h2>How</h2>
+		<ul>
+			<li>Keyword searches in DXR and IDE</li>
+			<li>Breakpoint and Debug</li>
+			<li>Code, build, run, review, repeat</li>
+		</ul>
 	</section>
 	<section class="slide">
-		<h2>Even tables</h2>
-		<table>
-		<tr>
-			<th scope="col">Locavore</th>
-			<th>Umami</th>
-			<th>Helvetica</th>
-			<th>Vegan</th>
-		</tr>
-		<tr>
-			<th scope="row">Fingerstache</th>
-			<td>Kale</td>
-			<td>Chips</td>
-			<td>Keytar</td>
-		</tr>
-		<tr>
-			<th scope="row">Sriracha</th>
-			<td>Gluten-free</td>
-			<td>Ennui</td>
-			<td>Keffiyeh</td>
-		</tr>
-		<tr>
-			<th scope="row">Thundercats</th>
-			<td>Jean</td>
-			<td>Shorts</td>
-			<td>Biodiesel</td>
-		</tr>
-		<tr>
-			<th scope="row">Terry</th>
-			<td>Richardson</td>
-			<td>Swag</td>
-			<td>Blog</td>
-		</tr>
-		</table>
-		<p>It’s good to have information organized.</p>
-	</section>
-	<section class="slide" id="picture">
-		<h2>Pictures</h2>
-		<img src="pictures/picture.jpg" alt="" class="cover">
-		<style>
-			#picture h2 {
-				color:#FFF;
-				}
-		</style>
+		<h2 class="shorten-text">Activity Stream Web Extension Prototype Hack</h2>
+		<img src="pictures/newtabpage.png" class="cover">
 	</section>
 	<section class="slide">
-		<h2 class="shout shrink">You can even shout this way</h2>
+		<h2>What</h2>
+		<video src="videos/activitystreamwebextension.mov" width="640px" height="320px" preload controls loop></video>
 	</section>
 	<section class="slide">
-		<h2>Inner navigation</h2>
-		<ol>
-			<li>Lets you reveal list items one by one</li>
-			<li class="next">To keep some key points</li>
-			<li class="next">In secret from audience</li>
-			<li class="next">But it will work only once</li>
-			<li class="next">Nobody wants to see the same joke twice</li>
-		</ol>
+		<h2>Why</h2>
+		<ul>
+			<li>Prototyping as part of new context-graph initiative</li>
+			<li>Exploration to run Activity Stream on different platforms</li>
+			<li>Possiblity of leveraging data outside of Firefox</li>
+		</ul>
 	</section>
-	<section class="slide grid">
-		<h2>All nicely aligned to grid</h2>
+	<section class="slide">
+		<h2>How</h2>
+		<ul>
+			<li>UI reused -- It's a webpage!</li>
+			<li>Web Extension API</li>
+			<li>page-metadata-parser</li>
+		</ul>
 	</section>
-	<section class="slide" id="see-more">
-		<h2 class="shout">
-			<img src="pictures/logo.svg" alt="Shower logo">
-			<a href="https://github.com/shower/shower">See more on GitHub</a>
-		</h2>
-		<style>
-			#see-more h2 {
-				font-size:100px
-				}
-			#see-more img {
-				width:0.72em;
-				height:0.72em;
-				}
-		</style>
+	<section class="slide">
+		<h2 class="shorten-text">Sync work on Android (WIP)</h2>
+		<img src="pictures/syncandroid.png" class="cover">
 	</section>
-	<p class="badge">
-		<a href="https://github.com/shower/shower">Fork me on GitHub</a>
-	</p>
+	<section class="slide">
+		<h2>What</h2>
+		<img src="pictures/syncbeforediagram.png" class="cover">
+	</section>
+	<section class="slide">
+		<h2>Why</h2>
+		<img src="pictures/syncwhydiagram.png" class="cover">
+	</section>
+	<section class="slide">
+		<h2>How</h2>
+		<img src="pictures/synchowdiagram.png" class="cover">
+	</section>
+	<section class="slide">
+		<h2>Lessons</h2>
+		<ul>
+			<li>It's not just all about coding</li>
+			<li>Ask, ask, and ask again</li>
+			<li>It's not always as easy as it seems</li>
+			<li>There are always tradeoffs</li>
+			<li>Change is still the only constant</li>
+		</ul>
+	</section>
+	<section class="slide">
+		<h2>Special Shoutout</h2>
+		<ul>
+			<li>Grisha Kruglov (mentor)</li>
+			<li>Stefan Arentz (manager)</li>
+			<li>Mobile team</li>
+			<li>Fellow 2016 Interns and University Team</li>
+			<li>YVR office</li>
+			<li>Margaret Leibovic and Nicholas Alexander</li>
+		</ul>
+	</section>
+	<section class="slide">
+		<h2>Questions</h2>
+		<ul>
+			<li>email: dlim@mozilla.com</li>
+			<li>irc: dlim</li>
+		</ul>
+	</section>
+	<section class="slide">
+		<h2 class="shout">Thank you</h2>
+	</section>
 	<!--
 		To hide progress bar from entire presentation
 		just remove “progress” element.
